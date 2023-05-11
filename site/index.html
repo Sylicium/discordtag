@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mon Site d'Informatique</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .user-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .user-card {
+      width: 300px;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 1px 1px 5px 0px black ;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 1000px;
+      margin-bottom: 10px;
+    }
+
+    .username {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 16px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+    <nav class="container navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/search.html">Rechercher un utilisateur</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/about.html">À propos</a>
+            </li>
+            <!--
+            <li class="nav-item">
+            <a class="nav-link" href="" target="_BLANK">Discord</a>
+            </li>-->
+        </ul>
+        </div>
+    </nav>
+    </header>
+
+    
+  <section class="hero bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Bienvenue sur DiscordTag</h1>
+      <p class="lead">Redécouvrez les discriminateur de Discord pour rechercher vos amis !</p>
+      <a href="#" class="btn btn-light btn-lg">En savoir plus</a>
+    </div>
+  </section>
+  
+
+  <section class="features py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="/assets/img/avatar.png" alt="Icone 1" class="img-fluid">
+          <h2>Produits de haute qualité</h2>
+          <p>Nous offrons une sélection de produits informatiques haut de gamme pour répondre à vos besoins.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="/assets/img/avatar.png" alt="Icone 2" class="img-fluid">
+          <h2>Services professionnels</h2>
+          <p>Nos experts sont là pour vous aider avec tous vos problèmes informatiques et vos besoins de support.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="/assets/img/avatar.png" alt="Icone 3" class="img-fluid">
+          <h2>Dernières technologies</h2>
+          <p>Restez à jour avec les dernières avancées technologiques dans le monde de l'informatique.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="row justify-content-center my-4">
+      <div class="col-md-6">
+        <form class="input-group">
+          <input id="coucou" name="query" type="text" class="form-control" placeholder="Jhon#0001..">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">Rechercher</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+        <div class="user-list">
+          <div class="user-card">
+            <img class="avatar" src="/assets/img/avatar.png" alt="Avatar">
+            <h2 class="username">Utilisateur 1</h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="user-card">
+            <img class="avatar" src="/assets/img/avatar.png" alt="Avatar">
+            <h2 class="username">Utilisateur 2</h2>
+            <p class="description">Praesent at tempor sapien, vitae scelerisque nunc.</p>
+          </div>
+          <div class="user-card">
+            <img class="avatar" src="/assets/img/avatar.png" alt="Avatar">
+            <h2 class="username">Utilisateur 3</h2>
+            <p class="description">Nulla sit amet finibus lectus, a lobortis velit.</p>
+          </div>
+          <!-- Ajoutez autant de cartes utilisateur que nécessaire -->
+        </div>
+      </div>
+  </section>
+  
+  <footer class="bg-dark text-white py-3">
+    <div class="container">
+      <p class="text-center">Tous droits réservés &copy; 2023 Mon Site d'Informatique</p>
+    </div>
+  </footer>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
