@@ -1,144 +1,95 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>Mon Site d'Informatique</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <style>
-    .user-list {
-      display: flex;
-      flex-wrap: wrap;
-    }
+    <head>
+        <title>Discord Tags</title>
 
-    .user-card {
-      width: 300px;
-      margin: 10px;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      text-align: center;
-      box-shadow: 1px 1px 5px 0px black ;
-    }
-
-    .avatar {
-      width: 100px;
-      height: 100px;
-      border-radius: 1000px;
-      margin-bottom: 10px;
-    }
-
-    .username {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .description {
-      font-size: 16px;
-      color: #777;
-    }
-  </style>
-</head>
-<body>
-    <header class="bg-dark text-white py-3">
-    <nav class="container navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">Logo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-            <a class="nav-link" href="#">Accueil</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="/search.html">Rechercher un utilisateur</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="/about.html">À propos</a>
-            </li>
-            <!--
-            <li class="nav-item">
-            <a class="nav-link" href="" target="_BLANK">Discord</a>
-            </li>-->
-        </ul>
-        </div>
-    </nav>
-    </header>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta charset="utf-8">
+        <title>Discord Embed Builder - Autocode</title>
+        <!-- <link rel="shortcut icon" href="https://autocode-static-assets.s3.us-west-2.amazonaws.com/content/autocode/release/static/branding/favicon-01-1f86a9d1.webp" type="image/png"> -->
+        
+        <meta name="description" content="Redécouvrez Discord !">
     
-  <section class="hero bg-primary text-white text-center py-5">
-    <div class="container">
-      <h1 class="display-4">Bienvenue sur DiscordTag</h1>
-      <p class="lead">Redécouvrez les discriminateur de Discord pour rechercher vos amis !</p>
-      <a href="#" class="btn btn-light btn-lg">En savoir plus</a>
-    </div>
-  </section>
-  
+        <meta property="og:site_name" content="DiscordTag">
+        <meta property="og:title" content="Discord Embed Builder - Autocode">
+        <meta property="og:url" content="https://discordtag.com">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Redécouvrez Discord !">
+        <!-- <meta property="og:image" content="https://autocode-static-assets.s3.us-west-2.amazonaws.com/content/autocode/release/static/social/opengraph-embed-builder-b64a7245.webp">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630"> -->
+    
+        <meta name="twitter:title" content="DiscordTag">
+        <!--<meta name="twitter:image" content="https://autocode-static-assets.s3.us-west-2.amazonaws.com/content/autocode/release/static/social/opengraph-embed-builder-b64a7245.webp"> -->
+        <meta name="twitter:url" content="https://discordtag.com">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:description" content="Redécouvrez Discord !">
+        <meta name="twitter:site" content="@discordtag">
+        <meta name="twitter:creator" content="@discordtag">
 
-  <section class="features py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="/assets/img/avatar.png" alt="Icone 1" class="img-fluid">
-          <h2>Produits de haute qualité</h2>
-          <p>Nous offrons une sélection de produits informatiques haut de gamme pour répondre à vos besoins.</p>
+        
+        <link rel="stylesheet" href="/assets/css/index.css" />
+    </head>
+    <body>
+        <div class="titlebar">
+            <div class="logo" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ41Ek85_8ulzNPo9gJAbyJb-G6jVA_d1Ewrw&usqp=CAU')"></div>
+            <div class="title">Discord Tags</div>
+            <button>
+                <div class="avatar" style="background-image: url('https://cdn.discordapp.com/avatars/477551434271948811/8a99deb56dfa8de340eb36b071b7e77c.webp?size=1024')"></div>
+                <div class="username">DioxydeCarb#0041</div>
+            </button>
         </div>
-        <div class="col-md-4">
-          <img src="/assets/img/avatar.png" alt="Icone 2" class="img-fluid">
-          <h2>Services professionnels</h2>
-          <p>Nos experts sont là pour vous aider avec tous vos problèmes informatiques et vos besoins de support.</p>
+        <div class="container">
+            <div class="box">
+                <div class="title">Trouve un ami !</div>
+                <div class="description">Tu peux ajouter un ami grâce à son Discord Tag. Attention aux mAjUsCuLeS !</div>
+            </div>
+            <div class="searchbar">
+                <input type="text" placeholder="Entre un nom d'utilisateur#0000">
+                <button><svg fill="#fff" stroke="#fff" stroke-width="50" version="1.1" height="16px;" width="16px" style="margin: auto;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-30 -30 612 612" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M508.255,490.146l-128-128c-0.06-0.06-0.137-0.077-0.196-0.128c34.193-38.434,55.142-88.917,55.142-144.418
+                                c0-120.175-97.425-217.6-217.6-217.6S0.001,97.425,0.001,217.6s97.425,217.6,217.6,217.6c55.501,0,105.975-20.949,144.418-55.151
+                                c0.06,0.06,0.077,0.137,0.128,0.196l128,128c2.5,2.509,5.777,3.755,9.054,3.755s6.554-1.246,9.054-3.746
+                                C513.247,503.253,513.247,495.147,508.255,490.146z M217.601,409.6c-105.865,0-192-86.135-192-192s86.135-192,192-192
+                                s192,86.135,192,192S323.466,409.6,217.601,409.6z"/>
+                        </g>
+                    </g>
+                    </svg><span>Rechercher</span></button>
+            </div>
+            <div class="grid">
+                <div class="user">
+                    <div class="banner" style="background-image: url('https://cdn.discordapp.com/banners/477551434271948811/2cf3219d535ab0d98fb26ea490a36c4d.png?size=1024')"></div>
+                    <div class="bar">
+                        <div class="avatar" style="background-image: url('https://cdn.discordapp.com/avatars/477551434271948811/8a99deb56dfa8de340eb36b071b7e77c.webp?size=1024')"></div>
+                        <div class="badges">
+                            <div class="badge" style="background-image: url('https://cdn.discordapp.com/badge-icons/8a88d63823d8a71cd5e390baa45efa02.png');"></div>
+                            <div class="badge" style="background-image: url('https://cdn.discordapp.com/badge-icons/6bdc42827a38498929a4920da12695d9.png');"></div>
+                            <div class="badge" style="background-image: url('https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png');"></div>
+                        </div>
+                    </div>
+                    <div class="contain">
+                        <div class="username">DioxydeCarb#0041</div>
+                        <div class="separator"></div>
+                        <button>Ajouter en ami</button>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="banner" style="background-color: #3222E2;"></div>
+                    <div class="bar">
+                        <div class="avatar" style="background-image: url('https://cdn.discordapp.com/avatars/770334301609787392/410f8cf45e368e3707e6cad916932cbd.webp?size=1024')"></div>
+                        <div class="badges">
+                            <div class="badge" style="background-image: url('https://cdn.discordapp.com/badge-icons/8a88d63823d8a71cd5e390baa45efa02.png');"></div>
+                            <div class="badge" style="background-image: url('https://cdn.discordapp.com/badge-icons/6bdc42827a38498929a4920da12695d9.png');"></div>
+                        </div>
+                    </div>
+                    <div class="contain">
+                        <div class="username">Sylicium#3980</div>
+                        <div class="separator"></div>
+                        <button>Ajouter en ami</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-          <img src="/assets/img/avatar.png" alt="Icone 3" class="img-fluid">
-          <h2>Dernières technologies</h2>
-          <p>Restez à jour avec les dernières avancées technologiques dans le monde de l'informatique.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="container">
-    <div class="row justify-content-center my-4">
-      <div class="col-md-6">
-        <form class="input-group">
-          <input id="coucou" name="query" type="text" class="form-control" placeholder="Jhon#0001..">
-          <div class="input-group-append">
-            <button class="btn btn-primary" type="submit">Rechercher</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <section>
-    <div class="container">
-        <div class="user-list">
-          <div class="user-card">
-            <img class="avatar" src="/assets/img/avatar.png" alt="Avatar">
-            <h2 class="username">Utilisateur 1</h2>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-          <div class="user-card">
-            <img class="avatar" src="/assets/img/avatar.png" alt="Avatar">
-            <h2 class="username">Utilisateur 2</h2>
-            <p class="description">Praesent at tempor sapien, vitae scelerisque nunc.</p>
-          </div>
-          <div class="user-card">
-            <img class="avatar" src="/assets/img/avatar.png" alt="Avatar">
-            <h2 class="username">Utilisateur 3</h2>
-            <p class="description">Nulla sit amet finibus lectus, a lobortis velit.</p>
-          </div>
-          <!-- Ajoutez autant de cartes utilisateur que nécessaire -->
-        </div>
-      </div>
-  </section>
-  
-  <footer class="bg-dark text-white py-3">
-    <div class="container">
-      <p class="text-center">Tous droits réservés &copy; 2023 Mon Site d'Informatique</p>
-    </div>
-  </footer>
-
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</body>
+    </body>
 </html>
