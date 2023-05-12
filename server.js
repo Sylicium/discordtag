@@ -9,14 +9,22 @@ const mysql = require('mysql');
 
 module.exports.run = () => {
     let express = require('express');
-    let appWebHTTP = express();    
+    let appWebHTTPS = express();    
     
-    let httpServer = http.createServer(appWebHTTP);
+    let httpServer = https.createServer(
+		// Provide the private and public key to the server by reading each
+		// file's content with the readFileSync() method.
+    {
+      key: fs.readFileSync("key.pem"),
+      cert: fs.readFileSync("cert.pem"),
+    },
+    appWebHTTPS
+  )
     // let ioHTTP = require('socket.io')(httpServer);
 
-    httpServer.listen(config.server.port, () => {
-        console.log(`[http] Website : localhost:${config.server.port}`)
+    httpServer.listen(config.server.portHTTPS, () => {
+        console.log(`[http] Website : localhost:${config.server.portHTTPS}`)
     });
     
-    appWebHTTP.use(express.static('site'));
+    appWebHTTPS.use(express.static('site'));
 }

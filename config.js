@@ -1,5 +1,6 @@
 module.exports = {
     server: {
-        port: 8080
+        portHTTP: 8080,
+        portHTTPS: 4433,
     }
 }
