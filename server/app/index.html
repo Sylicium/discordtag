@@ -31,7 +31,7 @@
     </head>
     <body>
         <div class="titlebar">
-            <div class="logo" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ41Ek85_8ulzNPo9gJAbyJb-G6jVA_d1Ewrw&usqp=CAU')"></div>
+            <div class="logo" style="background-image: url('/favicon.ico')"></div>
             <div class="title">Discord Tags</div>
             <button>
                 <div class="avatar" style="background-image: url('https://cdn.discordapp.com/avatars/477551434271948811/8a99deb56dfa8de340eb36b071b7e77c.webp?size=1024')"></div>
@@ -43,9 +43,10 @@
                 <div class="title">Trouve un ami !</div>
                 <div class="description">Tu peux ajouter un ami grâce à son Discord Tag. Attention aux mAjUsCuLeS !</div>
             </div>
-            <div class="searchbar">
-                <input type="text" placeholder="Entre un nom d'utilisateur#0000">
-                <button><svg fill="#fff" stroke="#fff" stroke-width="50" version="1.1" height="16px;" width="16px" style="margin: auto;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-30 -30 612 612" xml:space="preserve">
+            <form action="#" class="searchbar" method="get">
+                <input name="bot" type="text" value="" hidden>
+                <input name="query" type="text" placeholder="Entre un nom d'utilisateur#0000">
+                <button type="submit"><svg fill="#fff" stroke="#fff" stroke-width="50" version="1.1" height="16px;" width="16px" style="margin: auto;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-30 -30 612 612" xml:space="preserve">
                     <g>
                         <g>
                             <path d="M508.255,490.146l-128-128c-0.06-0.06-0.137-0.077-0.196-0.128c34.193-38.434,55.142-88.917,55.142-144.418
@@ -56,16 +57,18 @@
                         </g>
                     </g>
                     </svg><span>Rechercher</span></button>
-            </div>
-            <div class="grid">
+            </form>
+            <div id="userlist" class="grid">
+
                 <div class="user">
                     <div class="banner" style="background-image: url('https://cdn.discordapp.com/banners/477551434271948811/2cf3219d535ab0d98fb26ea490a36c4d.png?size=1024')"></div>
                     <div class="bar">
                         <div class="avatar" style="background-image: url('https://cdn.discordapp.com/avatars/477551434271948811/8a99deb56dfa8de340eb36b071b7e77c.webp?size=1024')"></div>
                         <div class="badges">
-                            <div class="badge" style="background-image: url('https://cdn.discordapp.com/badge-icons/8a88d63823d8a71cd5e390baa45efa02.png');"></div>
-                            <div class="badge" style="background-image: url('https://cdn.discordapp.com/badge-icons/6bdc42827a38498929a4920da12695d9.png');"></div>
-                            <div class="badge" style="background-image: url('https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png');"></div>
+                            <div title="HypeSquad Bravery" class="badge" style="background-image: url('https://cdn.discordapp.com/badge-icons/8a88d63823d8a71cd5e390baa45efa02.png');"></div>
+                            <div title="DiscordTag developer" class="badge" style="background-image: url('/favicon.ico');"></div>
+                            <div title="Active developer" class="badge" style="background-image: url('https://cdn.discordapp.com/badge-icons/6bdc42827a38498929a4920da12695d9.png');"></div>
+                            <div title="Nitro" class="badge" style="background-image: url('https://cdn.discordapp.com/badge-icons/2ba85e8026a8614b640c2837bcdfe21b.png');"></div>
                         </div>
                     </div>
                     <div class="contain">
@@ -74,6 +77,7 @@
                         <button>Ajouter en ami</button>
                     </div>
                 </div>
+
                 <div class="user">
                     <div class="banner" style="background-color: #3222E2;"></div>
                     <div class="bar">
